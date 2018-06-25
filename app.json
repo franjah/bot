@@ -1,0 +1,30 @@
+{
+  "name": "bot",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "access_token": {
+      "required": true
+    },
+    "access_token_secret": {
+      "required": true
+    },
+    "Consumer_key": {
+      "required": true
+    },
+    "consumer_secret": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
