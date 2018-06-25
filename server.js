@@ -27,7 +27,7 @@ function random_from_array(images){
 
 function upload_random_image(images){
   console.log('Opening an image...');
-  var image_path = path.join(__dirname, '/images/' + random_from_array(images)),
+  var image_path = path.join(__dirname, '/images1/' + random_from_array(images)),
       b64content = fs.readFileSync(image_path, { encoding: 'base64' });
 
   console.log('Uploading an image...');
@@ -71,7 +71,7 @@ fs.readdir(__dirname + '/images', function(err, files) {
 
     setInterval(function(){
       upload_random_image(images);
-    }, 1200000);
+    }, 1000);
   }
 });
 
